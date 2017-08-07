@@ -20,29 +20,33 @@ or
   thumbUrl={'http://via.placeholder.com/480x640'}
   fullUrl={'http://via.placeholder.com/960x1280'}
   zoomScale={3.6}
-  onEnterCallback={this.entered}
-  onExitCallback={this.exited}
+  onEnterCallback={() => { // Do something on mouseenter }}
+  onExitCallback={() => { // Do something on mouseout }}
   onExitTimeout={2000}
 />
 ```
 
-### props.thumbUrl
+#### props.thumbUrl
 Pass through a URL that will be the initial thumbnail image. This will also be the fallback used by devices without hover support.
 
-### props.fullUrl
+This simply renders an `<img>` tag so most image formats will be fine.
+
+#### props.fullUrl
 URL for higher resolution image that will be zoomed into. This is preloaded when the component mounts to avoid a delay on hover.
 
-### props.zoomScale *(Optional)*
+This renders as a CSS background image, so again most formats should work fine.
+
+#### props.zoomScale *(Optional)*
 How many times you want the image to be magnified. Defaults to 2.4x.
 
-### props.onEnterCallback *(Optional)*
-Pass a function that will be called when the user's pointer enters the component.
+#### props.onEnterCallback *(Optional)*
+Pass a function that will be called when the user's begins hovering over the component.
 
-### props.onExitCallback *(Optional)*
-Pass a function that will be called when the user's pointer leaves the component.
+#### props.onExitCallback *(Optional)*
+Pass a function that will be called when the user stops hovering over the component.
 
-### props.onExitTimeout *(Optional)*
-Pass a delay in milliseconds for the exit callback. The exit callback will not be called if the user does not hover over the component for longer than this delay. Useful for firing analytics events based on interaction with the component.
+#### props.onExitTimeout *(Optional)*
+Pass a delay in milliseconds for the exit callback. The exit callback will only be called if the user hovers over the component for longer than this delay. Useful for firing analytics events based on interaction with the component.
 
 ## Issues & Contributing
 
