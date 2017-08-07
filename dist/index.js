@@ -212,8 +212,8 @@ var SimpleZoom = function (_Component) {
 }(_react.Component);
 
 SimpleZoom.propTypes = {
-  thumbUrl: _propTypes2.default.string,
-  fullUrl: _propTypes2.default.string,
+  thumbUrl: _propTypes2.default.string.isRequired,
+  fullUrl: _propTypes2.default.string.isRequired,
   zoomScale: _propTypes2.default.number,
   onEnterCallback: _propTypes2.default.func,
   onExitCallback: _propTypes2.default.func,
