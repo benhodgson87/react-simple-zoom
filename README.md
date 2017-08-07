@@ -20,8 +20,8 @@ or
   thumbUrl={'http://via.placeholder.com/480x640'}
   fullUrl={'http://via.placeholder.com/960x1280'}
   zoomScale={3.6}
-  onEnterCallback={() => { // Do something on mouseenter }}
-  onExitCallback={() => { // Do something on mouseout }}
+  onEnterCallback={() => { /* Do something on mouseenter */ }}
+  onExitCallback={() => { /* Do something on mouseout */ }}
   onExitTimeout={2000}
 />
 ```
