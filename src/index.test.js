@@ -18,7 +18,7 @@ describe('Simple Zoom Component', () => {
     expect(wrapper.find('[data-ref="imgContainer"]').exists()).toBe(false)
   })
 
-  test('renders if thumbnail in API response', () => {
+  test('renders if thumbnail URL supplied', () => {
     const wrapper = mountComponent({
       thumbUrl: 'http://foo.bar/thumb.jpg',
       fullUrl: 'http://foo.bar/full.jpg',
@@ -92,7 +92,7 @@ describe('Simple Zoom Component', () => {
     expect(wrapper.prop('onExitCallback')).toHaveBeenCalled()
   })
 
-  test('sets a height attribute for zoomed plan on mouse enter', () => {
+  test('sets a height attribute for zoomed image on mouse enter', () => {
     const wrapper = mountComponent({
       thumbUrl: 'http://foo.bar/thumb.jpg',
       fullUrl: 'http://foo.bar/full.jpg',
