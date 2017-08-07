@@ -1,0 +1,41 @@
+.simpleZoom {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.simpleZoom img {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.simpleZoom__zoomed {
+  display: none;
+}
+
+.simpleZoom:hover img {
+  visibility: hidden;
+}
+
+.simpleZoom:hover .simpleZoom__zoomed {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (hover: none) {
+  .simpleZoom:hover .simpleZoom__zoomed {
+    display: none;
+  }
+
+  .simpleZoom:hover img {
+    visibility: visible;
+  }
+}
