@@ -4,8 +4,8 @@ import * as style from './index.css'
 
 class SimpleZoom extends Component {
   static propTypes = {
-    thumbUrl: PropTypes.string,
-    fullUrl: PropTypes.string,
+    thumbUrl: PropTypes.string.isRequired,
+    fullUrl: PropTypes.string.isRequired,
     zoomScale: PropTypes.number,
     onEnterCallback: PropTypes.func,
     onExitCallback: PropTypes.func,
