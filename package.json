@@ -2,8 +2,8 @@
   "name": "react-simple-zoom",
   "version": "1.0.0",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/benhodgson87/react-simple-zoom.git"
+    "type": "git",
+    "url": "https://github.com/benhodgson87/react-simple-zoom.git"
   },
   "author": "Ben Hodgson",
   "license": "MIT",
@@ -43,12 +43,13 @@
     "jest-css-modules": "^1.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-cookie": "^1.0.5",
     "react-addons-test-utils": "^15.5.1",
+    "react-cookie": "^1.0.5",
     "react-dom": "^15.5.4",
     "react-hot-loader": "next",
     "react-test-renderer": "^15.5.4",
     "style-loader": "^0.16.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
   },
