@@ -1,0 +1,11 @@
+{
+  "name": "react-simple-zoom",
+  "version": "0.0.1",
+  "description": "A React component to zoom an image within it's existing container",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Hodgson",
+  "license": "MIT"
+}
