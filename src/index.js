@@ -19,9 +19,9 @@ class SimpleZoom extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      timerInstance: null,
       timerCount: 0,
     }
+    this.timerInstance = null
   }
 
   componentWillMount() {
@@ -29,10 +29,10 @@ class SimpleZoom extends Component {
     img.src = this.props.fullUrl
   }
 
-  startHoverTimer(id) {
+  startHoverTimer() {
     const updateInt = 10
-    this.state.timerInstance = setInterval(() => {
-      this.setState((prevState, props) => ({
+    this.timerInstance = setInterval(() => {
+      this.setState((prevState) => ({
         timerCount: prevState.timerCount + updateInt,
       }))
     }, updateInt)
@@ -40,7 +40,7 @@ class SimpleZoom extends Component {
 
   endHoverTimer() {
     const timeout = this.props.onExitTimeout || 0
-    clearInterval(this.state.timerInstance)
+    clearInterval(this.timerInstance)
     if (this.props.onExitCallback && this.state.timerCount >= timeout) this.props.onExitCallback()
     this.setState({ timerCount: 0 })
   }
