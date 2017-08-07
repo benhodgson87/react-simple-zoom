@@ -1,6 +1,12 @@
 {
   "name": "react-simple-zoom",
   "version": "1.0.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/benhodgson87/react-simple-zoom.git"
+  },
+  "author": "Ben Hodgson",
+  "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
     "release": "webpack --p --config webpack.config.babel.js",
