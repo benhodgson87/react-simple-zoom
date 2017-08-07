@@ -80,9 +80,9 @@ var SimpleZoom = function (_Component) {
     var _this = _possibleConstructorReturn(this, (SimpleZoom.__proto__ || Object.getPrototypeOf(SimpleZoom)).call(this, props));
 
     _this.state = {
-      timerInstance: null,
       timerCount: 0
     };
+    _this.timerInstance = null;
     return _this;
   }
 
@@ -94,12 +94,12 @@ var SimpleZoom = function (_Component) {
     }
   }, {
     key: 'startHoverTimer',
-    value: function startHoverTimer(id) {
+    value: function startHoverTimer() {
       var _this2 = this;
 
       var updateInt = 10;
-      this.state.timerInstance = setInterval(function () {
-        _this2.setState(function (prevState, props) {
+      this.timerInstance = setInterval(function () {
+        _this2.setState(function (prevState) {
           return {
             timerCount: prevState.timerCount + updateInt
           };
@@ -110,7 +110,7 @@ var SimpleZoom = function (_Component) {
     key: 'endHoverTimer',
     value: function endHoverTimer() {
       var timeout = this.props.onExitTimeout || 0;
-      clearInterval(this.state.timerInstance);
+      clearInterval(this.timerInstance);
       if (this.props.onExitCallback && this.state.timerCount >= timeout) this.props.onExitCallback();
       this.setState({ timerCount: 0 });
     }
