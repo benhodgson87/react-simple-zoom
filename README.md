@@ -48,7 +48,7 @@ Pass a function that will be called when the user's begins hovering over the com
 Pass a function that will be called when the user stops hovering over the component.
 
 #### onExitTimeout *(Optional)*
-Pass a delay in milliseconds for the exit callback. The exit callback will only be called if the user hovers over the component for longer than this delay. Useful for firing analytics events based on interaction with the component.
+Pass a delay in milliseconds for the exit callback. The exit callback will only be called if the user hovers over the component for longer than this delay. Useful for firing analytics events based on genuine interaction with the component.
 
 ## Issues & Contributing
 
