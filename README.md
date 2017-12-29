@@ -7,11 +7,11 @@ A React component to zoom to a larger image within it's existing container.
 
 ## Installation
 
-`yarn add react-simple-zoom --dev`
+`yarn add react-simple-zoom`
 
 or
 
-`npm install react-simple-zoom --save-dev`
+`npm install react-simple-zoom`
 
 ## Usage
 
