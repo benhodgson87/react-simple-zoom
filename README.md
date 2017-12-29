@@ -26,26 +26,28 @@ or
 />
 ```
 
-#### props.thumbUrl
+### Props
+
+#### thumbUrl
 Pass through a URL that will be the initial thumbnail image. This will also be the fallback used by devices without hover support.
 
 This simply renders an `<img>` tag so most image formats will be fine.
 
-#### props.fullUrl
+#### fullUrl
 URL for higher resolution image that will be zoomed into. This is preloaded when the component mounts to avoid a delay on hover.
 
 This renders as a CSS background image, so again most formats should work fine.
 
-#### props.zoomScale *(Optional)*
+#### zoomScale *(Optional)*
 How many times you want the image to be magnified. Defaults to 2.4x.
 
-#### props.onEnterCallback *(Optional)*
+#### onEnterCallback *(Optional)*
 Pass a function that will be called when the user's begins hovering over the component.
 
-#### props.onExitCallback *(Optional)*
+#### onExitCallback *(Optional)*
 Pass a function that will be called when the user stops hovering over the component.
 
-#### props.onExitTimeout *(Optional)*
+#### onExitTimeout *(Optional)*
 Pass a delay in milliseconds for the exit callback. The exit callback will only be called if the user hovers over the component for longer than this delay. Useful for firing analytics events based on interaction with the component.
 
 ## Issues & Contributing
